@@ -16,3 +16,4 @@ webencodings==0.5.1
 Werkzeug==1.0.1
 WTForms==3.2.1
 psycopg2-binary==2.9.9
+MarkupSafe==2.0.1
