@@ -34,6 +34,7 @@ year = date.today().year
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = os.getenv('FLASK_KEY')
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 
