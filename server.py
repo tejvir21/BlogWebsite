@@ -258,4 +258,6 @@ def send_email(name, email, phone, message):
         connection.sendmail(from_addr=MAIL_ADDRESS, to_addrs=MAIL_ADDRESS_RECEIVER, msg=email_message)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
+    # app.run(debug=True)
